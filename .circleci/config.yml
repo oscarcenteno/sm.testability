@@ -42,6 +42,13 @@ jobs:
       # run tests!
       - run: gradle test
 
-      # Upload test results
+      - run:
+          name: Save test results
+          command: |
+            mkdir -p ~/junit/
+            find . -type f -regex ".*/build/test-results/.*xml" -exec cp {} ~/junit/ \;
+          when: always
       - store_test_results:
-          path: build/test-reports/test
+          path: ~/junit
+      - store_artifacts:
+          path: ~/junit
