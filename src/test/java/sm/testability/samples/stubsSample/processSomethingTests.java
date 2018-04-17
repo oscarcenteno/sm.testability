@@ -24,7 +24,7 @@ public class processSomethingTests {
     }
 
     @Test
-    public void shouldSendExpectedResponse() {
+    public void shouldReturnExpectedResponse() {
         MyResponse expected = new MyResponse();
         expected.setHelloName("Hello Don Quijote!");
 
