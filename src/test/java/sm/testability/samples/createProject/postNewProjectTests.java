@@ -6,8 +6,8 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import sm.testability.samples.createProject.requests.NewProject;
-import sm.testability.samples.createProject.responses.Project;
+import sm.testability.samples.createProject.requests.*;
+import sm.testability.samples.createProject.responses.*;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -18,9 +18,11 @@ import static org.mockito.Mockito.*;
 
 public class postNewProjectTests {
     @Mock
+    private
     DataSource dataSource;
 
     @InjectMocks
+    private
     CoordinationAlgorithm coordinator;
 
     @Before
@@ -34,7 +36,7 @@ public class postNewProjectTests {
         LocalDateTime date = LocalDateTime.of(2018, 04, 15, 12, 55);
         when(dataSource.getCurrentDateTime()).thenReturn(date);
 
-        List<String> names = new ArrayList();
+        ArrayList names = new ArrayList();
         when(dataSource.getExistingProjectNames()).thenReturn(names);
 
         Project generatedProject = new Project("Jupiter", date);

@@ -2,8 +2,6 @@ package sm.testability.samples.dashboard.businessLogic.businessRules;
 
 import org.joda.time.DateTime;
 import org.joda.time.Days;
-import org.joda.time.ReadableInstant;
-import sm.testability.samples.dashboard.businessLogic.businessRules.DateFormatter;
 
 import java.text.ParseException;
 import java.util.Date;
