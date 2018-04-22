@@ -1,4 +1,4 @@
-package sm.testability.samples.dashboard;
+package sm.testability.samples.dashboard.dataAccess;
 
 import sm.testability.samples.dashboard.businessLogic.inputs.Project;
 import org.springframework.data.jpa.repository.JpaRepository;

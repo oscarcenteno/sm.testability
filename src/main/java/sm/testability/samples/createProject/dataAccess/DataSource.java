@@ -1,4 +1,4 @@
-package sm.testability.samples.createProject;
+package sm.testability.samples.createProject.dataAccess;
 
 import org.springframework.stereotype.Component;
 import sm.testability.samples.createProject.responses.Project;

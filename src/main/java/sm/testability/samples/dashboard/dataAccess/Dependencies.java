@@ -1,4 +1,4 @@
-package sm.testability.samples.dashboard;
+package sm.testability.samples.dashboard.dataAccess;
 
 import java.util.Date;
 

@@ -1,6 +1,5 @@
 package sm.testability.samples.dashboard.businessLogic;
 
-import sm.testability.samples.dashboard.businessLogic.inputs.DashboardInputs;
 import sm.testability.samples.dashboard.businessLogic.inputs.Project;
 import sm.testability.samples.dashboard.businessLogic.response.CycleSnapDTO;
 import sm.testability.samples.dashboard.businessLogic.response.ProjectDTO;
